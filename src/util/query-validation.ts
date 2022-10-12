@@ -12,11 +12,11 @@ const QueryValidation = async (query: Query): Promise<string> => {
     return null;
   }
   const checkWidth: number = parseInt(query.width);
-  if (width.length === 0 || checkWidth < 1) {
+  if (Number.isNaN(width) || checkWidth < 1) {
     return 'please select number more than 1 for width';
   }
   const checkHeight: number = parseInt(query.height);
-  if (height.length === 0 || checkHeight < 1) {
+  if (Number.isNaN(height) || checkHeight < 1) {
     return 'please select number more than 1 for height';
   }
   return null;

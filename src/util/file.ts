@@ -15,7 +15,7 @@ export default class File {
   }
   static async createThumb(params: Query): Promise<string> {
     const { filename, width, height } = params;
-    if (!filename || !width || !height) {
+    if (!filename && !width && !height) {
       //return nothing if user don't send anything
       return null;
     }
@@ -49,6 +49,7 @@ export default class File {
       width && height
         ? path.resolve(File.thumbPath, `${filename}-${width}x${height}.jpg`)
         : path.resolve(File.fullPath, `${filename}.jpg`);
+
     // Check file existence
     try {
       await fs.access(filePath);
