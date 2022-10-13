@@ -4,14 +4,10 @@ const QueryValidation = async (query: Query): Promise<string> => {
   const { filename, width, height } = query;
   const checkWidth: number = parseInt(query.width);
   const checkHeight: number = parseInt(query.height);
-
   if (!filename) {
     return `${filename} is not a valid name please choose another valid name`;
   }
   if (filename && !width && !height) {
-    return null;
-  }
-  if (width && height) {
     return null;
   }
   if (!checkWidth || checkWidth < 1) {
@@ -22,5 +18,4 @@ const QueryValidation = async (query: Query): Promise<string> => {
   }
   return null;
 };
-
 export default QueryValidation;
