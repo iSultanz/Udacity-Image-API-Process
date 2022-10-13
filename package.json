@@ -7,7 +7,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "start:dev": "nodemon --config nodemon.json",
-    "start:prod": "node dist/index.js",
+    "start:prod": "npx tsc  && node dist/index.js",
     "build": "npx tsc",
     "prettier": "prettier --config .prettierrc src/**/*.{ts,js} --write",
     "lint": "eslint src/index.ts"

@@ -1,22 +1,23 @@
-import File from './file';
 import { Query } from './../types/query';
 
 const QueryValidation = async (query: Query): Promise<string> => {
   const { filename, width, height } = query;
+  const checkWidth: number = parseInt(query.width);
+  const checkHeight: number = parseInt(query.height);
 
-  // Check if requested file is available
-  if (!(await File.checkImage(filename))) {
+  if (!filename) {
     return `${filename} is not a valid name please choose another valid name`;
+  }
+  if (filename && !width && !height) {
+    return null;
   }
   if (width && height) {
     return null;
   }
-  const checkWidth: number = parseInt(query.width);
-  if (Number.isNaN(width) || checkWidth < 1) {
+  if (!checkWidth || checkWidth < 1) {
     return 'please select number more than 1 for width';
   }
-  const checkHeight: number = parseInt(query.height);
-  if (Number.isNaN(height) || checkHeight < 1) {
+  if (!checkHeight || checkHeight < 1) {
     return 'please select number more than 1 for height';
   }
   return null;

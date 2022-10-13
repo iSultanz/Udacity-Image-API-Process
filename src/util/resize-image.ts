@@ -1,6 +1,6 @@
 import sharp from 'sharp';
 import { SharpResize } from './../types/shapeResize';
-const imageProcess = async (resize: SharpResize): Promise<string> => {
+const resizeImage = async (resize: SharpResize): Promise<string> => {
   try {
     await sharp(resize.source)
       .resize(resize.width, resize.height)
@@ -13,4 +13,4 @@ const imageProcess = async (resize: SharpResize): Promise<string> => {
   }
 };
 
-export default imageProcess;
+export default resizeImage;
