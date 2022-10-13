@@ -4,13 +4,13 @@ Image API Process is done following Udacity requirement the project aim to take 
 
 
 <h2> Scripts</h2>
-`npm install` Install dependencies
-`npm run start` to start the application
-`npm run start:dev` to start with nodemon
-`npm run start:prod` to build the app using `npx tsc` then start the dist `node dist/index.js`
-`npm run build` to build the app using `npx tsc`
-`npm run prettier` to format the code using the config file .prettierrc
-`npm run lint` to run the eslint to check for error and warrning within the app
+```npm install``` Install dependencies
+```npm run start``` to start the application
+```npm run start:dev``` to start with nodemon
+```npm run start:prod``` to build the app using `npx tsc` then start the dist `node dist/index.js`
+```npm run build``` to build the app using `npx tsc`
+```npm run prettier``` to format the code using the config file .prettierrc
+```npm run lint``` to run the eslint to check for error and warrning within the app
 
 
 
