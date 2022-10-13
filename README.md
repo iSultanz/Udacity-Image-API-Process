@@ -4,13 +4,13 @@ Image API Process is done following Udacity requirement the project aim to take 
 
 
 ### Scripts
--Install dependencies: ```npm install``` 
--To start the server: ```npm run start``` 
--To start the server with nodemon```npm run start:dev```
--to start the dist: ```npm run start:prod```
--to create the dist: ```npm run build```
--To Format with prettier: ```npm run prettier```
--To run the Eslint: ```npm run lint``` 
+- Install dependencies: ```npm install``` 
+- To start the server: ```npm run start``` 
+- To start the server with nodemon```npm run start:dev```
+- To start the dist: ```npm run start:prod```
+- To create the dist: ```npm run build```
+- To Format with prettier: ```npm run prettier```
+- To run the Eslint: ```npm run lint``` 
 
 
 
