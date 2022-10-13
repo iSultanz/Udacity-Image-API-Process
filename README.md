@@ -3,7 +3,7 @@ Image API Process is done following Udacity requirement the project aim to take 
 
 
 
-###Scripts###
+### Scripts
 -Install dependencies: ```npm install``` 
 -To start the server: ```npm run start``` 
 -To start the server with nodemon```npm run start:dev```
