@@ -54,8 +54,8 @@ change the param of filename width and height it can't be less than or equal 1
 ├── .eslintrc.json                  
 ├── .prettierrc
 ├── nodemon.json                  
-├── package.json
-├── README.md                  
-├── tsconfig.json
-└── yarn.lock
+├── package-lock.json
+├── package.json                 
+├── README.md 
+└── tsconfig.json
 ```
